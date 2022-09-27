@@ -1,0 +1,49 @@
+{% include 'header.html' %}
+
+{% if items|length == 0 %}
+<div class="main-text text-center">
+
+    <h3>Welcome!</h3>
+
+</div>
+{% endif %}
+<div class="save-div">
+    {% if items|length > 0 and current_user.is_authenticated %}
+    <h3>{{ current_user.name }}'s To-Do List</h3>
+    {% elif items|length > 0 %}
+    <h3>My To-Do List</h3>
+    {% endif %}
+    {% if items|length == 0 %}
+    <h2>Create To-Do List Below!</h2>
+    {% else %}
+    <h2>Add to To-Do List Below!</h2>
+    {% endif %}
+
+    {% if current_user.is_authenticated == False %}
+    <a type="button" class="btn shadow-lg btn-soft-success text-success" href="{{ url_for('login') }}">Login or Create Account Make to Savable List</a>
+    {% endif %}
+</div>
+<div class="entries-div">
+    <section class="new-item">
+        <form class="list-form" action="{{ url_for('add_item', task_list=items) }}" method="post">
+            <input name="new_list_item" placeholder="Type to-do list item here" type="text" class="item-input">
+        </form>
+    </section>
+    <div class="container item-list">
+        {% for item in items %}
+        <div class="row">
+            <div class="col-sm item">
+                {% if item !="" %}
+                <h4>{{ item }}</h4>
+            </div>
+            <div class="col-sm text-right">
+                <a class="text-secondary done_rem" href="{{ url_for('done', item=item, task_list=items) }}"><i class="fa-solid fa-clipboard-check"></i></a>
+            {% endif %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+</body>
+</html>

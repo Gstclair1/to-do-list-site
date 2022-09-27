@@ -1,0 +1,71 @@
+body {
+    background-color: #E1FFEE
+}
+/* navbar */
+.nav-text {
+    color: #E1FFEE;
+}
+
+.nav-text:hover {
+    color: #A5F1E9;
+}
+
+/* main text */
+.main-text {
+    font-family: 'Merriweather';
+    color: #7FBCD2;
+    background-color: #E1FFEE;
+    padding: 25px 0;
+}
+
+/* save button */
+.save-div {
+    text-align: center;
+    background-color: #A5F1E9;
+    font-family: 'Ubuntu';
+    color: #7FBCD2;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.btn-soft-success {
+    margin: 10px 25px;
+    color: #7FBCD2;
+}
+
+/* list entries */
+.entries-div {
+    background-color: #E1FFEE;
+}
+
+.item-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 3rem;
+    padding: 20px 40px;
+    background-color: #E1FFEE;
+}
+
+.item-list {
+    padding: 20px 30px;
+    font-family: 'Montserrat';
+    color: #7FBCD2;
+}
+
+.done_rem {
+    padding: 0 10px;
+}
+
+/* login/register page */
+.login {
+    font-family: 'Merriweather';
+    color: #7FBCD2;
+    background-color: #E1FFEE;
+    padding: 25px 0;
+}
+
+.reg-link {
+    color: #7FBCD2;
+    text-decoration: underline #FFEEAF;
+}
