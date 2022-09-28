@@ -55,6 +55,7 @@ def load_user(user_id):
 
 
 @app.route("/todo")
+@app.route('/')
 def home():
     if current_user.is_authenticated:
         user = User.query.get(current_user.id)
