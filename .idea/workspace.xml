@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="697ce28d-c9b1-4121-8f10-b79bdd75bb6b" name="Changes" comment="remove extra files">
+    <list default="true" id="697ce28d-c9b1-4121-8f10-b79bdd75bb6b" name="Changes" comment="email validator">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/header.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664327313864</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="email validator">
+      <created>1664327783969</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1664327783969</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -169,6 +176,7 @@
     <MESSAGE value="gunicorn update" />
     <MESSAGE value="gunicorn update 2" />
     <MESSAGE value="remove extra files" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove extra files" />
+    <MESSAGE value="email validator" />
+    <option name="LAST_COMMIT_MESSAGE" value="email validator" />
   </component>
 </project>
